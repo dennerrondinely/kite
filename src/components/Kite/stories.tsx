@@ -1,11 +1,11 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import ToastiFly from './index';
+import Kite, { KiteProps } from './index';
 
 export default {
-  title: 'ToastiFly',
-  component: ToastiFly
+  title: 'Kite',
+  component: Kite
 } as Meta;
 
-export const Default: Story = (args) => <ToastiFly {...args} />;
+export const Default: Story<KiteProps> = (args) => <Kite {...args} />;
